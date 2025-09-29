@@ -1,0 +1,47 @@
+.proyectos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjeta-proyecto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  margin: 10px;
+}
+
+.tarjeta-proyecto:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-titulo {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.tarjeta-descripcion {
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.tarjeta-boton {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tarjeta-boton:hover {
+  background-color: #0056b3;
+}
