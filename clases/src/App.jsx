@@ -4,6 +4,8 @@ import Nav from './components/Nav';
 import Main from './components/Main';
 import Boton from './components/Boton';
 import Footer from './components/Footer';
+import Formulario from './components/Formulario';
+import Carrito from './components/Carrito';
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
     <Header/>
     <Nav/>
     <Main/>
-    <Boton/>
+    <Formulario/>
+    <Carrito/>
     <Footer/>
     </>
   )

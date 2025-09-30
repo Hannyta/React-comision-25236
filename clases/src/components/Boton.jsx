@@ -9,7 +9,15 @@ const Boton = () => {
          <h3>{contador}</h3>
             <button 
                 onClick={() => setContador(contador + 1)} 
-            >Boton
+            >Incrementar
+            </button>
+            <button 
+                onClick={() => setContador(contador - 1)} 
+            >Descrementar
+            </button>
+            <button 
+                onClick={() => setContador(0)} 
+            >Reiniciar
             </button>
         </>
     )
