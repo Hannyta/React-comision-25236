@@ -16,7 +16,7 @@ Pautas Generales:
 
 1) Información de Productos: La lista debe incluir al menos nombre y precio de cada producto.
 
-2) Actualización dinámica: Ele estado del carrito debe actualizarse al agregar cada producto.
+2) Actualización dinámica: En el estado del carrito debe actualizarse al agregar cada producto.
 
 3) Carrito vacío: Mostrar un mensaje cuando no haya productos seleccionados.
 

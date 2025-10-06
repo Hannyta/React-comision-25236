@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: calc (1280px+ 300px);
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -33,6 +33,32 @@
   }
 }
 
+section {
+  flex: 1;
+}
+
+main {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 300px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  height: 100%;
+}
+
 .card {
   padding: 2em;
 }
@@ -43,14 +69,24 @@
 
 /* Tarjetas */
 .tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
-  width: 250px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 0;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   background-color: #f9f9f9;
+}
+
+img {
+  width: 150px;
+  height: 150px;
 }
 
 /* ---- Botones ---- */
@@ -60,14 +96,14 @@
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  color: white;
+  color: rgb(225, 224, 231);
   margin-top: 10px;
   transition: 0.2s;
 }
 
 /* Variantes */
 .btn.primary {
-  background-color: #c68cfc; /* Lila */
+  background-color: #2d00f7c4; /* Lila */
 }
 
 .btn.success {
@@ -85,4 +121,18 @@
 /* Hover */
 .btn:hover {
   opacity: 0.85;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  min-width: 250px;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-left: 2px solid #ccc;
+  text-align: left;
+  overflow-y: auto;
 }
