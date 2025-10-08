@@ -1,4 +1,6 @@
-const Carrito = ({productos = []}) => {
+import Boton from './Boton'
+
+const Carrito = ({productos = [], vaciarCarrito}) => {
 
   const total = productos.reduce(( acc, producto) => acc + producto.price, 0);
 
@@ -13,7 +15,20 @@ const Carrito = ({productos = []}) => {
               {producto.title}: ${producto.price}
             </p> 
           ))}
+          <hr />
           <h3>Total: ${total.toFixed(2)} </h3>
+          <hr />
+          <button>
+            <Boton 
+            texto="🚮 Vaciar carrito"
+            tipo="danger"
+            onClick={() => {
+              if (confirm('¿Seguro que querés vaciar el carrito?')) {
+                vaciarCarrito();
+              }
+            }}/>
+          </button>
+
         </>
       )}
     </div>

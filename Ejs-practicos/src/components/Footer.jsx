@@ -1,10 +1,9 @@
 
-
 const Footer = () => {
   return (
-    <>
-    Footer
-    </>
+    <footer>
+      <p>Copyright © 2019-2025 Detutti C.A.</p>
+    </footer>
   )
 }
 

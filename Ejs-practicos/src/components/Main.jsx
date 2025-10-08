@@ -21,7 +21,12 @@ id)) {
       setCarrito([...carrito, producto]);
     }
   };
+
+  const vaciarCarrito = () => {
+    setCarrito([]);
+  };
   
+
   return (
     <main>
       <section>
@@ -33,7 +38,7 @@ id)) {
         />
       </section>
       <aside>
-        <Carrito productos={carrito} />
+        <Carrito productos={carrito} vaciarCarrito={vaciarCarrito}/>
       </aside>
     </main>
   )

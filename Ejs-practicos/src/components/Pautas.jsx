@@ -8,7 +8,7 @@ Requisitos del Proyecto:
 
 3) Agregar productos: Implementar un evento de clic para añadir productos al carrito.
 
-4) Mostrar carrito: Creae un componente para visualizar los productos seleccionados.
+4) Mostrar carrito: Crear un componente para visualizar los productos seleccionados.
 
 5) Crear un Layout del eCommerce: (Header, Footer, Main, Nav).
 
