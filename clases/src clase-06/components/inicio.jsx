@@ -1,3 +1,5 @@
+import Productos from './Productos';
+
 const Inicio = () => {
     return (
         <>

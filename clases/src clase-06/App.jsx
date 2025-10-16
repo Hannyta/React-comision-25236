@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Clicker from './components/Clicker';
 import { Routes, Route } from 'react-router-dom'
-import Inicio from './components/inicio';
+import Inicio from './components/Inicio';
 import Contacto from './components/Contacto';
 import DetalleProducto from './components/DetalleProducto';
 
