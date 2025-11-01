@@ -1,18 +1,8 @@
-:root {
-  --color-primary: #2d00f7c4;
-  --color-success: #28a745;
-  --color-danger: #dc3545;
-  --color-secondary: #6c757d;
-  --color-bg-light: #f9f9f9;
-  --color-bg-aside: #f5f5f5;
-  --color-text-dark: #333;
-  --color-accent: #d87c5a;
-
-  --font-main: 'Inter', sans-serif;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 2rem;
-  --radius: 8px;
+#root {
+  max-width: calc(1280px + 300px);
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo {
@@ -176,7 +166,7 @@ img {
 
 /* Variantes */
 .btn.primary {
-  background-color: var(--color-primary);
+  background-color: #2d00f7c4; /* Lila */
 }
 
 .btn.success {
@@ -235,57 +225,4 @@ footer {
   text-align: center;
   position: relative;
   width: 100%;
-}
-
-.about {
-  padding: 2rem;
-  background-color: var(--color-bg-light);
-  color: #333;
-  font-family: var(--font-main);
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d87c5a;
-}
-
-.about p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.contact {
-  padding: 2rem;
-  background-color: #fff8f0;
-  color: #333;
-  font-family: 'Inter', sans-serif;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d87c5a;
-}
-
-.contact p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.form-placeholder {
-  padding: 1rem;
-  border: 2px dashed #d87c5a;
-  border-radius: 6px;
-  background-color: #fff3e6;
-  text-align: center;
-  font-style: italic;
 }
