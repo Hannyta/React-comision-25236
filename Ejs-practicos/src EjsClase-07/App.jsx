@@ -14,18 +14,37 @@ import Login from './pages/Login';
 import './App.css';
 
 function App() {
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const toggleAuth = () => {
     setIsAuthenticated(prev => !prev);
   };
 
+  const [carrito, setCarrito] = useState([]);
+
+  const agregarAlCarrito = (producto) => {
+    if (!carrito.find(p => p.id === producto.id)) {
+      setCarrito([...carrito, producto]);
+    }
+  };
+
+  const vaciarCarrito = () => {
+    setCarrito([]);
+  };
+
   return (
     <>
       <Header isAuthenticated={isAuthenticated} toggleAuth={toggleAuth} />
       <Routes>
-        <Route path="/" element={<Main isAuthenticated={isAuthenticated} />} />
-        <Route path="/productos" element={<Main isAuthenticated={isAuthenticated} />} />
+        <Route path="/" element={
+          <Main 
+            carrito={carrito}
+            agregarAlCarrito={agregarAlCarrito}
+            vaciarCarrito={vaciarCarrito}
+            isAuthenticated={isAuthenticated}
+          />
+        } />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/producto/:id" element={<DetalleProducto />} />
@@ -34,7 +53,10 @@ function App() {
           path="/carrito"
           element={
             <RutaProtegida isAuthenticated={isAuthenticated}>
-              <CarritoPage />
+              <CarritoPage 
+                carrito={carrito}
+                vaciarCarrito={vaciarCarrito}
+              />
             </RutaProtegida>
           }
         />

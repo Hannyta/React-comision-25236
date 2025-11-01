@@ -1,10 +1,5 @@
 import Boton from '../components/Boton'
 
-const handleSubmit = (e) => {
-  e.preventDefault();
-  alert('¡Gracias por tu mensaje!');
-};
-
 const Contact = () => {
   return (
     <section className="contact">
@@ -14,48 +9,43 @@ const Contact = () => {
       </p>
 
       <div className="form-placeholder">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="nombre">
+        <form>
+          <label for="nombre">
             <span> Nombre </span> <sup>*</sup>
           </label>
           <br/>
           <input 
             type="text"
             name="nombre"
-            id="nombre"
             required
           />
           <br />
-          <label htmlFor="email">
+          <label for="email">
             <span>Correo electrónico</span> <sup>*</sup>
             <br />
          </label>
           <input 
             type="email"
             name="email"
-            id="email"
             required
           />
           <br />
-          <label htmlFor="telefono">
+          <label for="telefono">
             <span>Número de teléfono</span>
             <br />
           </label>
           <input 
             type="tel"
             name="telefono"
-            id="telefono"
           />
           <br />
-          <label htmlFor="mensaje">
+          <label for="mensaje">
             <span>Mensaje</span>
             <br />
           </label>
-          <textarea
+          <input 
             type="text"
             name="mensaje"
-            id="mensaje"
-            rows="4"
           />
           <br />
           <Boton

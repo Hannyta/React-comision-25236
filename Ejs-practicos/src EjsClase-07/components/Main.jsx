@@ -1,10 +1,8 @@
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import Producto from './Producto';
 import Carrito from './Carrito';
-import { AuthContext } from '../context/AuthContext';
 
-const Main = () => {
-  const { isAuthenticated } = useContext(AuthContext);
+const Main = ({ carrito, agregarAlCarrito, vaciarCarrito, isAuthenticated }) => {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
@@ -17,12 +15,16 @@ const Main = () => {
     <main>
       <section>
         <h2>Productos</h2>
-        <Producto productos={productos} />
+        <Producto
+          productos={productos}
+          carrito={carrito}
+          agregarAlCarrito={agregarAlCarrito}
+        />
       </section>
       {isAuthenticated && (
         <aside>
-          <Carrito />
-        </aside>
+        <Carrito productos={carrito} vaciarCarrito={vaciarCarrito} />
+      </aside>
       )}
     </main>
   );

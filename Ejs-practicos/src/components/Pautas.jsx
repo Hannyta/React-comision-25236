@@ -1,20 +1,22 @@
-/* ¡Venís haciendo un excelente trabajo! Para tu próxima tarea necesitamos que implemente rutas dinámicas y protegidas para mejorar la seguridad y funcionalidad del eCommerce.
+/* Crear código que integre el manejo del estado global para el carrito de compras y la autenticación de usuarios utilizando Context API y rutas protegidas con React Router DOM.
 
 Requisitos del Proyecto:
 
-1) Crea una ruta dinámica para /productos/:id que muestre los detalles del producto seleccionado.
+1) Crear un nuevo archivo CarritoContext.js en la carpeta context.
 
-2) Usa el hook useParams para obtener el id del producto desde la URL.
+2) Implementar un contexto con las funciones para agregar productos al carrito y vaciarlo.
 
-3) Simula una base de datos de productos en un archivo o estado y muestra los detalles según el id.
+3) Envolver el componente principal (App.js) con el proveedor del contexto CarritoProvider.
 
-4) Implementa rutas protegidas para /carrito y /admin.
+4) Crear un archivo AuthContext.js en la carpeta context.
 
-5) Redirige a los usuarios no autenticados a la página de inicio de sesión (/login).
+5) Implementar funciones para iniciar sesión (login) y cerrar sesión (logout) simulando el manejo de un token con localStorage.
 
-6) Crea un botón "Iniciar Sesión" que permita cambiar el estado de isAuthenticated para simular el inicio y cierre de sesión.
+6) Crear un componente Login con un formulario básico para que los usuarios ingresen un nombre de usuario y contraseña.
 
-7) Agrega enlaces para navegar entre inicio, lista de productos, carrito y administración.
+7) Simular la autenticación validando las credenciales y redirigir a la página principal si son correctas.
 
-8) Usa el componente Link para los enlaces.
+8) Crear un componente ProtectedRoute que permita acceder a ciertas páginas solo si el usuario está autenticado.
+
+9) Proteger la ruta del carrito para que solo usuarios autenticados puedan verlo.
 */

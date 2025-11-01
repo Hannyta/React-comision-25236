@@ -1,19 +1,16 @@
-import { useContext } from 'react';
-import { CarritoContext } from '../context/CarritoContext.jsx';
-import Boton from './Boton';
+import Boton from './Boton'
 
-const Carrito = () => {
-  const { carrito, vaciarCarrito } = useContext(CarritoContext);
+const Carrito = ({productos = [], vaciarCarrito}) => {
 
-  const total = carrito.reduce(( acc, producto) => acc + producto.price, 0);
+  const total = productos.reduce(( acc, producto) => acc + producto.price, 0);
 
   return (
     <div>
       <h2>Carrito</h2>
-      {carrito.length === 0 ?( 
+      {productos.length === 0 ?( 
         <p>No hay productos en el carrito.</p> ) : (
         <>
-          {carrito.map(producto => ( 
+          {productos.map(producto => ( 
             <p key={producto.id}>
               {producto.title}: ${producto.price}
             </p> 

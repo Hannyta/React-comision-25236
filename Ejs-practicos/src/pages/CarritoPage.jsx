@@ -1,10 +1,15 @@
+import { useContext } from 'react';
 import Carrito from '../components/Carrito';
+import { CarritoContext } from '../context/CarritoContext.jsx';
 
-const CarritoPage = ({ carrito, vaciarCarrito }) => {
+const CarritoPage = () => {
+  const { carrito, vaciarCarrito } = useContext(CarritoContext);
+
   return (
     <main>
       <section>
-        <Carrito productos={carrito} vaciarCarrito={vaciarCarrito} />
+        <h2>Tu carrito</h2>
+        <Carrito />
       </section>
     </main>
   );

@@ -1,10 +1,6 @@
-import { useContext } from 'react';
 import Tarjeta from './Tarjeta';
-import { CarritoContext } from '../context/CarritoContext.jsx';
 
-const Producto = ({ productos }) => {
-  const { carrito, agregarAlCarrito } = useContext(CarritoContext);
-
+const Producto = ({ productos, carrito, agregarAlCarrito }) => {
   if (!productos.length) return <p>Cargando productos...</p>;
 
   return (
