@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import DetalleProducto from './pages/DetalleProducto';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/producto/:id" element={<DetalleProducto />} />
       </Routes>
       <Footer/>
     </>

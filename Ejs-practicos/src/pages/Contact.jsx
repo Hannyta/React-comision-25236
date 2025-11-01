@@ -1,3 +1,5 @@
+import Boton from '../components/Boton'
+
 const Contact = () => {
   return (
     <section className="contact">
@@ -9,7 +11,7 @@ const Contact = () => {
       <div className="form-placeholder">
         <form>
           <label for="nombre">
-            <b> Nombre </b> 
+            <span> Nombre </span> <sup>*</sup>
           </label>
           <br/>
           <input 
@@ -19,10 +21,37 @@ const Contact = () => {
           />
           <br />
           <label for="email">
-            <b>Correo Electronico</b>
+            <span>Correo electrónico</span> <sup>*</sup>
             <br />
          </label>
-          <input type="Mensaje" />
+          <input 
+            type="email"
+            name="email"
+            required
+          />
+          <br />
+          <label for="telefono">
+            <span>Número de teléfono</span>
+            <br />
+          </label>
+          <input 
+            type="tel"
+            name="telefono"
+          />
+          <br />
+          <label for="mensaje">
+            <span>Mensaje</span>
+            <br />
+          </label>
+          <input 
+            type="text"
+            name="mensaje"
+          />
+          <br />
+          <Boton
+            texto="Enviar"
+            tipo="primary"
+          />
         </form>
       </div>
     </section>

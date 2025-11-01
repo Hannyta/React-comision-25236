@@ -8,6 +8,7 @@ const Producto = ({ productos, carrito, agregarAlCarrito }) => {
       {productos.map(producto => (
         <li key={producto.id}>
           <Tarjeta
+            id={producto.id}
             img={producto.image}
             nombre={producto.title}
             precio={producto.price}
