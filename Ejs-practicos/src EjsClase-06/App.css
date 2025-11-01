@@ -84,12 +84,6 @@ header h1 {
   color: #0a0a42;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 .nav {
   display: flex;
   justify-content: center;
@@ -112,13 +106,6 @@ header h1 {
 .nav a.active {
   background-color: #f2ebff;
   color: #5e2ae8;
-}
-
-.carrito-icon {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 main {

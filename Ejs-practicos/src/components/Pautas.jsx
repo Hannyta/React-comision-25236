@@ -1,21 +1,20 @@
-/* En este ejercicio, vas a mejorar la navegación de tu aplicación eCommerce integrando rutas para ver algún tipo de navegación básica en el sitio web. Para ello, se usará React Router y se agregarán nuevas rutas para distintas secciones de la página. Además, optimizarás la navegación para que el usuario pueda ir de una lista de productos a otras secciones y viceversa.
+/* ¡Venís haciendo un excelente trabajo! Para tu próxima tarea necesitamos que implemente rutas dinámicas y protegidas para mejorar la seguridad y funcionalidad del eCommerce.
 
 Requisitos del Proyecto:
 
-1) Usa React Router para crear rutas, donde cada seccion (About, Contact, etc) tendrá su propia página.
+1) Crea una ruta dinámica para /productos/:id que muestre los detalles del producto seleccionado.
 
-2) Crea un componente About que tenga una descripción de la marca del eCommerce. Otro componente Contact que tendrá un form que armaremos más adelante, donde el usuario podrá ponerse en contacto con la empresa de nuestro cliente.
+2) Usa el hook useParams para obtener el id del producto desde la URL.
 
-3) Usa el componente Link para permitir la navegación entre las secciones del sitio web.
+3) Simula una base de datos de productos en un archivo o estado y muestra los detalles según el id.
 
-4) Mantén el estado de carga y de errores en la página donde se vean los productos.
+4) Implementa rutas protegidas para /carrito y /admin.
 
-5) Muestra un mensaje de "Cargando productos…" mientras los datos están siendo obtenidos y maneja posibles errores con un mensaje adecuado.
+5) Redirige a los usuarios no autenticados a la página de inicio de sesión (/login).
 
-Pautas Generales:
+6) Crea un botón "Iniciar Sesión" que permita cambiar el estado de isAuthenticated para simular el inicio y cierre de sesión.
 
-1) Estructura del proyecto: Continúa con el proyecto anterior. Agrega el componente de detalles y la funcionalidad de rutas dinámicas.
+7) Agrega enlaces para navegar entre inicio, lista de productos, carrito y administración.
 
-2) Componentes: Asegúrate de que los componentes Productos y ProductoDetalle sean reutilizables y estén bien organizados.
-
+8) Usa el componente Link para los enlaces.
 */

@@ -18,14 +18,16 @@ const Carrito = ({productos = [], vaciarCarrito}) => {
           <hr />
           <h3>Total: ${total.toFixed(2)} </h3>
           <hr />
-          <Boton 
+          <button>
+            <Boton 
             texto="🚮 Vaciar carrito"
             tipo="danger"
             onClick={() => {
               if (confirm('¿Seguro que querés vaciar el carrito?')) {
                 vaciarCarrito();
               }
-          }}/>
+            }}/>
+          </button>
 
         </>
       )}
